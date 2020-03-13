@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phonebook</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="phonejs.js"></script>
+</head>
+<body>
+			<br>
+			<br>
+	<table id="example" class="table table-striped table-bordered" style="width:80%">
+        <tr>
+           <th width="40%"> Contact Name</th>
+           <th width="40%"> Contact Number</th>
+           <th width="20%"> </th>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+	<div class="input-group" align="left" >
+	 	<button type="button" name="add" id="add" class="btn btn-info">Add 	Contact</button>
+	</div>
+
+    <form method="post" action="">
+		<div class="input-group">
+			<label>First Name</label>
+			<input type="text" name="firstname" id="firstname" onkeypress="return isString(event)">
+			<label>Last Name</label>
+			<input type="text" name="lastname" id="lastname" onkeypress="return isString(event)">
+			<label>Contact Number</label>
+			<input type="number" name="number" id="number">
+			<input type="hidden" name="id" id="id"/>
+		</div>
+		<div class="input-group">
+			<label></label>
+			<input type="submit" class="btn btn-info" name="save" id="save" value="Save Contact"/>
+		</div>
+	</form>
+</body>
+</html>

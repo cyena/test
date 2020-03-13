@@ -1,0 +1,36 @@
+<html>  
+      <head>  
+           <title>Phonebook</title>  
+      </head>  
+      <body>  
+           <div class="container box">  
+                <h3 align="center">Contacts</h3><br />   
+                <br /><button name="add" id="add" class="btn btn-info" >Add</button><br />  
+                <div id="user_collapse" class="">  
+                     <form method="post" id="user_form">  
+                          <label>Name  </label>  
+                          <br/>
+                          <input type="text" name="name" id="name"   />  
+                          <br />  
+                          <label>Number</label><br/>  
+                          <input type="number" name="number" id="number"  />  
+                          
+                          <br />    
+                          <br />  
+                          <div >  <input type="hidden" name="id" id="id"  />
+                               <input type="hidden" name="action" id="action" />  
+                               <input type="submit" name="button_action" id="button_action" class="btn btn-default" value="Insert" />  
+                          </div>  
+                     </form>  
+                </div>  
+                <br /><br />  
+                <div id="user_table" class="table-responsive">  
+                </div>  
+           </div>  
+      </body>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />      
+      <link rel="stylesheet" href="style.css"/>
+      <script src="myscript.js"></script>
+ </html>  
